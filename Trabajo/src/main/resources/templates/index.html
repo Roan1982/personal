@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+
+ 
+    <body>
+
+        <header>
+            <nav th:replace="fragments/navbar :: navbar"></nav>
+        </header>
+
+<div class="container my-4">
+    <!-- Título "Despacho" con estilos de Bootstrap -->
+    <h1 class="display-4 text-center">Despacho</h1>
+
+    
+     <div class="text-center">
+      <a href="/nuevo-servicio" class="btn btn-primary">Cargar Nuevo Servicio</a>
+    </div>
+  </div>
+    
+        <footer th:replace="fragments/footer :: footer"></footer>
+
+
+    </body>
+
+</html>

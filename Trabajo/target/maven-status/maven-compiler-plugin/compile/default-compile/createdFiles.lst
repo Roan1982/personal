@@ -1,0 +1,6 @@
+com\Roan\Trabajo\entidades\Servicio.class
+com\Roan\Trabajo\controladores\ServicioControlador.class
+com\Roan\Trabajo\entidades\Categoria.class
+com\Roan\Trabajo\repositorios\ServicioRepositorio.class
+com\Roan\Trabajo\DespachoApplication.class
+com\Roan\Trabajo\servicios\ServicioServicio.class

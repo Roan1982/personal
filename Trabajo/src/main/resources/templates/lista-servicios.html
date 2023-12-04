@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Lista de Servicios</title>
+</head>
+<body>
+          <header>
+            <nav th:replace="fragments/navbar :: navbar"></nav>
+        </header>
+    <h1>Lista de Servicios</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Categoría</th>
+                <th>Período</th>
+                <th>Expediente</th>
+                <th>Factura</th>
+                <th>Monto</th>
+                <th>Monto Total</th>
+                <th>Detalle</th>
+                <th>Tipo de Trámite</th>
+                <th>Estado</th>
+                <th>Proveedor</th>
+                <th>Fecha Último Pase</th>
+                <th>Usuario</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="servicio : ${servicios}">
+                <td th:text="${servicio.id}"></td>
+                <td th:text="${servicio.categoria.nombre}"></td>
+                <td th:text="${servicio.periodo}"></td>
+                <td th:text="${servicio.expediente}"></td>
+                <td th:text="${servicio.factura}"></td>
+                <td th:text="${servicio.monto}"></td>
+                <td th:text="${servicio.montoTotal}"></td>
+                <td th:text="${servicio.detalle}"></td>
+                <td th:text="${servicio.tipoTramite}"></td>
+                <td th:text="${servicio.estado}"></td>
+                <td th:text="${servicio.proveedor}"></td>
+                <td th:text="${servicio.fechaUltimoPase}"></td>
+                <td th:text="${servicio.usuario}"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+            <footer th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>

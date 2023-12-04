@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+    
+              <header>
+            <nav th:replace="fragments/navbar :: navbar"></nav>
+        </header>
+    
+    <h1>Nuevo Servicio</h1>
+    <form action="#" th:action="@{/guardarServicio}" th:object="${servicio}" method="post">
+        <label>Categoría:</label>
+        <input type="text" th:field="*{categoria}" /><br>
+        
+        <label>Período:</label>
+        <input type="text" th:field="*{periodo}" /><br>
+        
+        <label>Expediente:</label>
+        <input type="text" th:field="*{expediente}" /><br>
+        
+        <label>Factura:</label>
+        <input type="text" th:field="*{factura}" /><br>
+        
+        <label>Monto:</label>
+        <input type="number" th:field="*{monto}" /><br>
+        
+        <label>Monto Total:</label>
+        <input type="number" th:field="*{montoTotal}" /><br>
+        
+        <label>Detalle:</label>
+        <input type="text" th:field="*{detalle}" /><br>
+        
+        <label>Tipo de Trámite:</label>
+        <input type="text" th:field="*{tipoTramite}" /><br>
+        
+        <label>Estado:</label>
+        <input type="text" th:field="*{estado}" /><br>
+        
+        <label>Proveedor:</label>
+        <input type="text" th:field="*{proveedor}" /><br>
+        
+        <label>Fecha Último Pase:</label>
+        <input type="date" th:field="*{fechaUltimoPase}" /><br>
+        
+        <label>Usuario:</label>
+        <input type="text" th:field="*{usuario}" /><br>
+        
+        <input type="submit" value="Guardar" />
+    </form>
+    
+       <footer th:replace="fragments/footer :: footer"></footer>
+       
+</body>
+</html>
+

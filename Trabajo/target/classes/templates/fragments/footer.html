@@ -1,0 +1,25 @@
+<footer th:fragment="footer" class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link" href="https://www.instagram.com/atuservicioteam" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a class="nav-link" href="https://www.facebook.com/people/Atuservicio/61553224941936/" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+          </a>
+          <a class="nav-link" href="mailto:atuservicioteam@gmail.com">
+            <i class="far fa-envelope"></i> Correo Electrónico
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 text-md-right">
+        <p class="navbar-text">
+          &copy; A Tu Servicio - <span id="fecha-hora"></span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script th:src="@{/js/footer.js}"></script>
+</footer>
